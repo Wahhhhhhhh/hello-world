@@ -130,3 +130,103 @@ if (name == "") {
 	document.write("Welcome "+name);
 }
 */
+
+/*
+for (i = 0; i<10; i++){
+
+	document.write(i+". Hello World!"+"<br />");
+
+}
+*/
+
+/*
+var test = 1;
+do {
+document.write(test+". Hello World!"+"<br />");
+test++;
+} while (test < 6)
+*/
+
+/*
+var cars = new Array("Ferrari", "Mercedes", "Ford", "Range Rover");
+for (i=0; i<cars.length; i++){
+document.write(cars[i]+"<br />");
+}
+*/
+
+/*
+var cars = ["Ferrari", "Mercedes", "BMW"];
+cars.length = 2;
+for (i=0; i<cars.length; i++){
+document.write(cars[i] + "<br />");
+}
+*/
+
+/*
+var city = ["New York", "Miami", "Lisbon", "Madrid"];
+city.push("Paris", "Dublin");
+for (i=0; i<city.length; i++){
+	document.write(city[i] + "<br />");
+}
+*/
+
+/*
+var dwarf = new Object();
+dwarf.strength = "7";
+dwarf.armor = "8";
+dwarf.attack = "6";
+dwarf.show_properties = function (){
+	document.write("hero strength: "+dwarf.strength+"<br />"+
+					"hero armor: "+dwarf.armor+"<br />"+
+					"hero attack: "+dwarf.attack+"<br />"
+		);
+};
+dwarf.show_properties();
+*/
+
+/*
+var dwarf = {strength: "7", armor: "8", attack: "6",}
+document.write("hero strength: "+dwarf.strength+"<br />"+"hero armor: "+dwarf.armor+"<br />"+"hero attack: "+dwarf.attack+"<br />");
+*/
+
+/*
+function Hero (Name, Armor, Strength, Attack){
+	this.Name = Name;
+	this.Armor = Armor;
+	this.Strength = Strength;
+	this.Attack = Attack;
+}
+
+var dwarf = new Hero("Dwarf","5","5","5");
+var barbarian = new Hero("Barbarian","7","7","7");
+var elf = new Hero("Elf","9","9","9");
+
+for (var x in elf){
+	document.write(x + ":" + elf[x] + "<br />");
+}
+*/
+
+//NAVIGATOR OBJECTS
+
+/*
+window.alert("Your browser is : "+navigator.appName);
+if(navigator.appName == "Microsoft Internet Explorer"){
+	document.write("Welcome IE Users");
+}else{
+	document.write("You need IE to run this script!")
+}
+*/
+
+/*
+if(navigator.javaEnabled()){
+	document.write("Java is enabled");
+}else{
+	alert("Java is not enabled on your browser!");
+}
+*/
+
+// HISTORY OBJECT
+
+// alert("my browser has visited: "+history.length+" pages!") 
+
+//alert(history.back());
